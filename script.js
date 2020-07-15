@@ -57,6 +57,10 @@ document.addEventListener('DOMContentLoaded', function() {
     }
   }
 
+  // Active chat when contact us click
+
+  document.querySelector("#main-content > footer > div.article-more-questions > p > a").addEventListener('click', function () {zE.activate()})
+
   // Expand Request comment form when Add to conversation is clicked
   var showRequestCommentContainerTrigger = document.querySelector('.request-container .comment-container .comment-show-container'),
     requestCommentFields = document.querySelectorAll('.request-container .comment-container .comment-fields'),
