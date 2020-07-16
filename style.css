@@ -1024,6 +1024,16 @@ ul {
   position: relative;
 }
 
+
+div#articles {
+  display: none;
+ }
+ 
+ .article-head a[href='#']{
+  opacity:.2;
+  cursor: none;
+ }
+
 /***** Hero component *****/
 .hero {
   background-position: center;
