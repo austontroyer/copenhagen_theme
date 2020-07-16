@@ -44,18 +44,19 @@
 
     <article id="main-content" class="article">
       <header class="article-header">
-        <div>
+
+        <div class="article-head">
+ <div>
   <a href="#" class="article-nav">prev</a>
   <a href="#" class="article-nav">next</a>
  </div>
  <div id="articles"></div>
 <script>
  $(document).ready(function() {
- var _location = $(".breadcrumbs li:nth-child(3) a").attr("href").split('/en-us/');
- var _split = _location[1].split('-')[0];
- var secId = _split.split('/')[1];
+ var catId = $(".breadcrumbs li:nth-child(2) a").attr("href").match(/[0-9]+/);
+// sometimes it can be nth-child(1) if the name of category is first in article breadcrumb
 
- $.getJSON('/api/v2/help_center/en-us/sections/'+secId+'/articles.json', function(data) { 
+ $.getJSON('/api/v2/help_center/en-us/categories/'+catId+'/articles.json', function(data) { 
 // change en-us to your Help center lang
 
  console.log(data);// intialize list
@@ -77,6 +78,7 @@ $('.article-head a:last-of-type').attr('href',next);
 }); 
 </script>
 </div>
+
         <h1 title="{{article.title}}" class="article-title">
           {{article.title}}
           {{#if article.internal}}
