@@ -10,6 +10,10 @@
     poweredBy: false,
     color: '#000000',
     highlightColor: '#000000',
-    responsive: false
+    autocomplete: {
+      enabled: true,                      // is the autocomplete feature enabled?
+      inputSelector: '#query',            // the DOM selector to select the search box
+      hitsPerPage: 10                     // the number of suggestions to display
+    }
   });
 </script>
