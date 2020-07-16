@@ -218,23 +218,15 @@ document.addEventListener("DOMContentLoaded", function () {
     toggle.focus();
   }
 
-  var burgerMenu = document.querySelector(".header .menu-button");
   var userMenu = document.querySelector("#user-nav");
-
-  burgerMenu.addEventListener("click", function (e) {
-    e.stopPropagation();
-    toggleNavigation(this, userMenu);
-  });
 
   userMenu.addEventListener("keyup", function (e) {
     if (e.keyCode === ESCAPE) {
       e.stopPropagation();
-      closeNavigation(burgerMenu, this);
     }
   });
 
   if (userMenu.children.length === 0) {
-    burgerMenu.style.display = "none";
   }
 
   // Toggles expanded aria to collapsible elements
