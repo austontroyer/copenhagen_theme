@@ -1015,6 +1015,10 @@ ul {
   color: #777;
 }
 
+body > main > div.container > nav > div > svg {
+  top: 52% important;
+}
+
 [dir="rtl"] .search-icon {
   right: 15px;
   left: auto;
