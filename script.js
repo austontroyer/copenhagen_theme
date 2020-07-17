@@ -92,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   if (recentlyViewedContent) {
-    recentlyViewedContent.textContent = "Recently viewed content";
+    recentlyViewedContent.textContent = "Recently viewed articles";
   }
 
   // Change related articles
@@ -102,7 +102,7 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   if (relatedArticles) {
-    relatedArticles.textContent = "Related content";
+    relatedArticles.textContent = "Related articles";
   }
 
   // Expand Request comment form when Add to conversation is clicked
