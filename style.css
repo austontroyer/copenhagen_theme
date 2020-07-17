@@ -1028,16 +1028,6 @@ body > main > div.container > nav > div > svg {
   position: relative;
 }
 
-
-div#articles {
-  display: none;
- }
- 
- .article-head a[href='#']{
-  opacity:.2;
-  cursor: none;
- }
-
 /***** Hero component *****/
 .hero {
   background-position: center;
