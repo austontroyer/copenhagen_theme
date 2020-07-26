@@ -1019,6 +1019,10 @@ body > main > div.container > nav > div > svg {
   top: 52% !important;
 }
 
+body > main > section > div > svg {
+  top: 52% !important;
+}
+
 [dir="rtl"] .search-icon {
   right: 15px;
   left: auto;
